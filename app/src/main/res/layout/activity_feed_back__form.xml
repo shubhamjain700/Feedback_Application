@@ -18,7 +18,7 @@
         android:paddingTop="16dp"
         android:orientation="vertical">
         <TextView
-            android:text="Sign In"
+            android:text="Feedback Form"
 
 
 
@@ -43,6 +43,54 @@
             android:layout_marginTop="20dp"
             android:hint="Enter comment"
             android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/qOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment"
+            android:layout_marginTop="10dp"
+            android:text="1. Passion and enthusiasm to teach" />
+
+        <RadioGroup
+            android:id="@+id/rgOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qOne"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/qOneROne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/qOneRTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/qOneRThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/qOneRFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/qOneRFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+        </RadioGroup>
 
 
     </>
