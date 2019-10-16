@@ -25,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="50dp"
+            android:textColor="#333D48"
             android:layout_marginBottom="24dp"
             android:layout_gravity="center_horizontal" />
         <EditText
@@ -32,6 +33,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+
             android:hint="Enter subject"
             android:paddingLeft="10dp" />
 
@@ -48,6 +50,7 @@
             android:id="@+id/qOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#333D48"
             android:layout_below="@+id/comment"
             android:layout_marginTop="10dp"
             android:text="1. Passion and enthusiasm to teach" />
@@ -64,6 +67,7 @@
                 android:id="@+id/qOneROne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:text="1" />
 
             <RadioButton
