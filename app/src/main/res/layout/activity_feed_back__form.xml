@@ -528,7 +528,18 @@
 
 
 
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
 
+
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/custom_circle"
+            android:padding="22dp"
+            android:text="Submit"
+            android:textColor="#FFFFFF" />
 
 
 
@@ -536,5 +547,6 @@
 
 
     </>
+
 
 </ScrollView>
