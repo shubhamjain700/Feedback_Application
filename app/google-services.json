@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "312102834857",
+    "firebase_url": "https://feedbackapplication-fc37b.firebaseio.com",
+    "project_id": "feedbackapplication-fc37b",
+    "storage_bucket": "feedbackapplication-fc37b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312102834857:android:92994cf606ab6107d14fb8",
+        "android_client_info": {
+          "package_name": "com.appsquadz.feedback_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312102834857-46pasffolfvkdp1jo35jqf6oj9fig02l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAifRuMh6HxwqQf5vSyBuKXHK5kc2ytrhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312102834857-46pasffolfvkdp1jo35jqf6oj9fig02l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
