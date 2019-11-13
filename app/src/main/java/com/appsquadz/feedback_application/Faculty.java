@@ -7,6 +7,10 @@ public class Faculty {
     private String facultynumber;
     private String facultyMail;
 
+    public Faculty(){
+
+    }
+
 
     public Faculty(String facultyid, String facultyName, String facultynumber,String facultyMail) {
         this.facultyid = facultyid;

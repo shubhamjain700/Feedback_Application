@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Feedback_Application</string>
+    <string name="content_forgot_password">Just Provide us your Email Address below.</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="otp_message">OTP will be sent to your provided details.</string>
+
 </resources>

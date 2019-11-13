@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fitsSystemWindows="true"
     android:background="#ffffff">
+
+
 
     <LinearLayout
         android:orientation="vertical"
@@ -12,9 +15,8 @@
         android:paddingTop="56dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
-
         <TextView
-            android:text="Sign In"
+            android:text="Add Faculty"
 
 
 
@@ -24,19 +26,45 @@
             android:layout_marginBottom="24dp"
             android:layout_gravity="center_horizontal" />
 
+
+        <!--  Name Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_facultyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Faculty Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <!-- Email Label -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/email"
+            <EditText android:id="@+id/input_facultyemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_facultyNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-
-                android:hint="Email" />
+                android:hint="Mobile Number"/>
         </com.google.android.material.textfield.TextInputLayout>
+
 
         <!-- Password Label -->
         <com.google.android.material.textfield.TextInputLayout
@@ -44,27 +72,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/password"
+            <EditText android:id="@+id/input_facultyId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Password"/>
+
+                android:hint="Faculty Id"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-
-
-
-        <TextView android:id="@+id/link_forgotPassword"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:text="Forgot Password ?"
-            android:gravity="end"
-            android:textSize="16dip"/>
-
+        <!-- Signup Button -->
 
         <Button
-            android:id="@+id/login1"
+            android:id="@+id/btn_addFaculty"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
 
@@ -72,18 +90,8 @@
             android:layout_marginBottom="24dp"
             android:background="@drawable/custom_circle"
             android:padding="12dp"
-            android:text="Sign in"
+            android:text="Add Faculty"
             android:textColor="#FFFFFF" />
-
-        <TextView android:id="@+id/sign_up"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginBottom="24dp"
-            android:text="Sign up?"
-
-            android:textSize="20dip"/>
-
 
 
     </LinearLayout>

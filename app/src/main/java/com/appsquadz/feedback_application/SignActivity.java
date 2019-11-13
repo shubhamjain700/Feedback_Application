@@ -22,6 +22,9 @@ public class SignActivity extends AppCompatActivity {
     EditText email;
     EditText passowrd;
     Button login;
+    TextView forgotPassword;
+
+
 
 
 
@@ -35,6 +38,17 @@ public class SignActivity extends AppCompatActivity {
         login=findViewById(R.id.login1);
         email=findViewById(R.id.email);
         passowrd=findViewById(R.id.password);
+        forgotPassword=findViewById(R.id.link_forgotPassword);
+
+
+
+//        addFaculty.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(SignActivity.this,AddFaculty.class));
+//
+//            }
+//        });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,10 +65,17 @@ public class SignActivity extends AppCompatActivity {
 
 
 
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+    startActivity(new Intent(SignActivity.this,Forgot_Password.class));
+
+            }
+        });
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-    startActivity(new Intent(SignActivity.this,SignUp.class));
+                startActivity(new Intent(SignActivity.this,SignUp.class));
 
             }
         });

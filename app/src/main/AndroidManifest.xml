@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.appsquadz.feedback_application">
-<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FeedBack_Form"></activity>
+        <activity android:name=".Forgot_Password"></activity>
+        <activity android:name=".AddFaculty" />
+        <activity android:name=".FeedBack_Form" />
         <activity android:name=".SignUp" />
         <activity android:name=".SignActivity" />
         <activity android:name=".Splash">
