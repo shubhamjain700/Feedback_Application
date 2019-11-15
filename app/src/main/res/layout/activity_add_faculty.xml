@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:fitsSystemWindows="true"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    tools:context=".AddFaculty">
 
 
 
@@ -36,7 +37,7 @@
             <EditText android:id="@+id/input_facultyname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textCapWords"
+
                 android:hint="Faculty Name" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,7 +50,7 @@
             <EditText android:id="@+id/input_facultyemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
+
                 android:hint="Email" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -66,7 +67,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <!-- Password Label -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
