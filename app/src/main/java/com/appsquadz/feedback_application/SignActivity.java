@@ -1,5 +1,6 @@
 package com.appsquadz.feedback_application;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 
 import androidx.annotation.NonNull;
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class SignActivity extends AppCompatActivity {
     TextView signup;
+    private ProgressDialog progressDialog;
     FirebaseAuth firebaseAuth;
     EditText email;
     EditText passowrd;
@@ -39,6 +41,9 @@ public class SignActivity extends AppCompatActivity {
         email=findViewById(R.id.email);
         passowrd=findViewById(R.id.password);
         forgotPassword=findViewById(R.id.link_forgotPassword);
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Please wait...");
+        progressDialog.setCancelable(false);
 
 
 
@@ -68,7 +73,7 @@ public class SignActivity extends AppCompatActivity {
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-    startActivity(new Intent(SignActivity.this,MainActivity.class));
+    startActivity(new Intent(SignActivity.this,Forgot_Password.class));
 
             }
         });
@@ -97,13 +102,14 @@ public class SignActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             startActivity(new Intent(SignActivity.this,FeedBack_Form.class));
-
-                            Toast.makeText(SignActivity.this,"Sucessful",
+                            progressDialog.dismiss();
+                            Toast.makeText(SignActivity.this,"Welcome ",
                                     Toast.LENGTH_LONG).show();
 
                         }
                         else {
-                            Toast.makeText(SignActivity.this,""+task.isSuccessful(),
+                            progressDialog.dismiss();
+                            Toast.makeText(SignActivity.this,"Please Check Your email id and password",
                                     Toast.LENGTH_LONG).show();
                         }
                     }
